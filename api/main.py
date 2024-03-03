@@ -1,5 +1,6 @@
 from fastapi import FastAPI 
-from routes import shorten_url
+from routes import shorten_url, user, login, post
+import uvicorn
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
@@ -17,8 +18,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+app.include_router(user.router)
+app.include_router(login.router)
+app.include_router(post.router)
 
-app.include_router(shorten_url.router)
 
 #Posts API
 @app.get("/")
@@ -27,5 +30,6 @@ def root():
 
 
 
-
+if __name__ == "__main__":
+    uvicorn.run(app="main:app", host="localhost", port=8000, reload=True)
 #Users API
