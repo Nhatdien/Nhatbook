@@ -1,15 +1,14 @@
-from models import models
-from db import database
+from api.models import models
+from api.db import database
 from fastapi import Response, status, HTTPException, Depends, APIRouter
 from typing import List
 from sqlalchemy.orm import Session
-from schemas.urls import UrlResponse
 from fastapi.encoders import jsonable_encoder
 from fastapi.responses import JSONResponse
 from starlette.responses import RedirectResponse
-from schemas.token import Token, TokenData
-from utils.auth import *
-from config import settings
+from api.schemas.token import Token, TokenData
+from api.utils.auth import *
+from api.config import settings
 
 router = APIRouter(prefix="/login", tags=["Login"])
 

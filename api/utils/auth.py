@@ -7,11 +7,11 @@ from jose import JWTError, jwt
 from sqlalchemy.orm import Session
 from passlib.context import CryptContext
 from pydantic import BaseModel
-from config import settings
-from db import database
-from schemas.user import UserInDb, UserBase
-from schemas.token import Token, TokenData
-from models import models
+from api.config import settings
+from api.db import database
+from api.schemas.user import UserInDb, UserBase
+from api.schemas.token import Token, TokenData
+from api.models import models
 
 
 oauth2_schemes = OAuth2PasswordBearer(tokenUrl="login")

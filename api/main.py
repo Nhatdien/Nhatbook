@@ -1,7 +1,8 @@
 from fastapi import FastAPI 
-from routes import shorten_url, user, login, post
+from api.routes import user, login, post
 import uvicorn
 from fastapi.middleware.cors import CORSMiddleware
+from starlette.responses import RedirectResponse
 
 app = FastAPI()
 
@@ -26,7 +27,7 @@ app.include_router(post.router)
 #Posts API
 @app.get("/")
 def root():
-    return {"message": "siuuuuuuu!"}
+    return RedirectResponse(url="/docs")
 
 
 

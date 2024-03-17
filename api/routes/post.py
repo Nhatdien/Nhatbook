@@ -1,19 +1,18 @@
-from models import models
-from db import database
+from api.models import models
+from api.db import database
 from fastapi import Response, status, HTTPException, Depends, APIRouter
 from typing import List
 from sqlalchemy.orm import Session
 from sqlalchemy.exc import IntegrityError
-from schemas.urls import UrlResponse
 from fastapi.encoders import jsonable_encoder
 from fastapi.responses import JSONResponse
-from utils.auth import *
-from models.models import Post
-from schemas.post import *
+from api.utils.auth import *
+from api.models.models import Post
+from api.schemas.post import *
 
 router = APIRouter(prefix="/post", tags=["Post"])
 
-@router.get("/", response_model=List[PostResponse])
+@router.get("/")
 def get_posts(current_user: UserInDb = Depends(get_current_user), db: Session = Depends(database.get_db)):
     if current_user.id:
         return db.query(Post).all()
@@ -37,11 +36,12 @@ def get_post(post_id: int, db: Session = Depends(database.get_db)):
         return post
     raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Post not found")
 
-@router.delete("/{post_id}", response_model=UrlResponse)
+@router.delete("/{post_id}")
 def delete_post(post_id: int, current_user: UserInDb = Depends(get_current_user), db: Session = Depends(database.get_db)):
     post = db.query(models.Post).filter(models.Post.id == post_id).first()
     if post:
         db.delete(post)
+        db.commit()
         return {"url": f"/post/{post_id}"}
     raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Post not found")
 

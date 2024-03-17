@@ -57,22 +57,6 @@
         "documentation": {}
     },
     {
-        "label": "List",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Optional",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
         "label": "Optional",
         "importPath": "typing",
         "description": "typing",
@@ -298,11 +282,43 @@
         "documentation": {}
     },
     {
+        "label": "MutableList",
+        "importPath": "sqlalchemy.ext.mutable",
+        "description": "sqlalchemy.ext.mutable",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.mutable",
+        "documentation": {}
+    },
+    {
         "label": "fileConfig",
         "importPath": "logging.config",
         "description": "logging.config",
         "isExtraImport": true,
         "detail": "logging.config",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "api.config",
+        "description": "api.config",
+        "isExtraImport": true,
+        "detail": "api.config",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "api.config",
+        "description": "api.config",
+        "isExtraImport": true,
+        "detail": "api.config",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "api.config",
+        "description": "api.config",
+        "isExtraImport": true,
+        "detail": "api.config",
         "documentation": {}
     },
     {
@@ -387,14 +403,6 @@
         "documentation": {}
     },
     {
-        "label": "Session",
-        "importPath": "sqlalchemy.orm",
-        "description": "sqlalchemy.orm",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.orm",
-        "documentation": {}
-    },
-    {
         "label": "declarative_base",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
@@ -419,155 +427,75 @@
         "documentation": {}
     },
     {
-        "label": "settings",
-        "importPath": "config",
-        "description": "config",
-        "isExtraImport": true,
-        "detail": "config",
-        "documentation": {}
-    },
-    {
-        "label": "settings",
-        "importPath": "config",
-        "description": "config",
-        "isExtraImport": true,
-        "detail": "config",
-        "documentation": {}
-    },
-    {
-        "label": "settings",
-        "importPath": "config",
-        "description": "config",
-        "isExtraImport": true,
-        "detail": "config",
-        "documentation": {}
-    },
-    {
         "label": "Base",
-        "importPath": "db.database",
-        "description": "db.database",
+        "importPath": "api.db.database",
+        "description": "api.db.database",
         "isExtraImport": true,
-        "detail": "db.database",
+        "detail": "api.db.database",
         "documentation": {}
     },
     {
         "label": "models",
-        "importPath": "models",
-        "description": "models",
+        "importPath": "api.models",
+        "description": "api.models",
         "isExtraImport": true,
-        "detail": "models",
+        "detail": "api.models",
         "documentation": {}
     },
     {
         "label": "models",
-        "importPath": "models",
-        "description": "models",
+        "importPath": "api.models",
+        "description": "api.models",
         "isExtraImport": true,
-        "detail": "models",
+        "detail": "api.models",
         "documentation": {}
     },
     {
         "label": "models",
-        "importPath": "models",
-        "description": "models",
+        "importPath": "api.models",
+        "description": "api.models",
         "isExtraImport": true,
-        "detail": "models",
+        "detail": "api.models",
         "documentation": {}
     },
     {
         "label": "models",
-        "importPath": "models",
-        "description": "models",
+        "importPath": "api.models",
+        "description": "api.models",
         "isExtraImport": true,
-        "detail": "models",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "models",
-        "description": "models",
-        "isExtraImport": true,
-        "detail": "models",
+        "detail": "api.models",
         "documentation": {}
     },
     {
         "label": "database",
-        "importPath": "db",
-        "description": "db",
+        "importPath": "api.db",
+        "description": "api.db",
         "isExtraImport": true,
-        "detail": "db",
+        "detail": "api.db",
         "documentation": {}
     },
     {
         "label": "database",
-        "importPath": "db",
-        "description": "db",
+        "importPath": "api.db",
+        "description": "api.db",
         "isExtraImport": true,
-        "detail": "db",
+        "detail": "api.db",
         "documentation": {}
     },
     {
         "label": "database",
-        "importPath": "db",
-        "description": "db",
+        "importPath": "api.db",
+        "description": "api.db",
         "isExtraImport": true,
-        "detail": "db",
+        "detail": "api.db",
         "documentation": {}
     },
     {
         "label": "database",
-        "importPath": "db",
-        "description": "db",
+        "importPath": "api.db",
+        "description": "api.db",
         "isExtraImport": true,
-        "detail": "db",
-        "documentation": {}
-    },
-    {
-        "label": "database",
-        "importPath": "db",
-        "description": "db",
-        "isExtraImport": true,
-        "detail": "db",
-        "documentation": {}
-    },
-    {
-        "label": "Response",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "status",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "HTTPException",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "Depends",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "APIRouter",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
+        "detail": "api.db",
         "documentation": {}
     },
     {
@@ -731,38 +659,6 @@
         "documentation": {}
     },
     {
-        "label": "UrlResponse",
-        "importPath": "schemas.urls",
-        "description": "schemas.urls",
-        "isExtraImport": true,
-        "detail": "schemas.urls",
-        "documentation": {}
-    },
-    {
-        "label": "UrlResponse",
-        "importPath": "schemas.urls",
-        "description": "schemas.urls",
-        "isExtraImport": true,
-        "detail": "schemas.urls",
-        "documentation": {}
-    },
-    {
-        "label": "UrlResponse",
-        "importPath": "schemas.urls",
-        "description": "schemas.urls",
-        "isExtraImport": true,
-        "detail": "schemas.urls",
-        "documentation": {}
-    },
-    {
-        "label": "UrlResponse",
-        "importPath": "schemas.urls",
-        "description": "schemas.urls",
-        "isExtraImport": true,
-        "detail": "schemas.urls",
-        "documentation": {}
-    },
-    {
         "label": "jsonable_encoder",
         "importPath": "fastapi.encoders",
         "description": "fastapi.encoders",
@@ -784,22 +680,6 @@
         "description": "fastapi.encoders",
         "isExtraImport": true,
         "detail": "fastapi.encoders",
-        "documentation": {}
-    },
-    {
-        "label": "jsonable_encoder",
-        "importPath": "fastapi.encoders",
-        "description": "fastapi.encoders",
-        "isExtraImport": true,
-        "detail": "fastapi.encoders",
-        "documentation": {}
-    },
-    {
-        "label": "JSONResponse",
-        "importPath": "fastapi.responses",
-        "description": "fastapi.responses",
-        "isExtraImport": true,
-        "detail": "fastapi.responses",
         "documentation": {}
     },
     {
@@ -852,58 +732,58 @@
     },
     {
         "label": "Token",
-        "importPath": "schemas.token",
-        "description": "schemas.token",
+        "importPath": "api.schemas.token",
+        "description": "api.schemas.token",
         "isExtraImport": true,
-        "detail": "schemas.token",
+        "detail": "api.schemas.token",
         "documentation": {}
     },
     {
         "label": "TokenData",
-        "importPath": "schemas.token",
-        "description": "schemas.token",
+        "importPath": "api.schemas.token",
+        "description": "api.schemas.token",
         "isExtraImport": true,
-        "detail": "schemas.token",
+        "detail": "api.schemas.token",
         "documentation": {}
     },
     {
         "label": "Token",
-        "importPath": "schemas.token",
-        "description": "schemas.token",
+        "importPath": "api.schemas.token",
+        "description": "api.schemas.token",
         "isExtraImport": true,
-        "detail": "schemas.token",
+        "detail": "api.schemas.token",
         "documentation": {}
     },
     {
         "label": "TokenData",
-        "importPath": "schemas.token",
-        "description": "schemas.token",
+        "importPath": "api.schemas.token",
+        "description": "api.schemas.token",
         "isExtraImport": true,
-        "detail": "schemas.token",
+        "detail": "api.schemas.token",
         "documentation": {}
     },
     {
         "label": "*",
-        "importPath": "utils.auth",
-        "description": "utils.auth",
+        "importPath": "api.utils.auth",
+        "description": "api.utils.auth",
         "isExtraImport": true,
-        "detail": "utils.auth",
+        "detail": "api.utils.auth",
         "documentation": {}
     },
     {
         "label": "*",
-        "importPath": "utils.auth",
-        "description": "utils.auth",
+        "importPath": "api.utils.auth",
+        "description": "api.utils.auth",
         "isExtraImport": true,
-        "detail": "utils.auth",
+        "detail": "api.utils.auth",
         "documentation": {}
     },
     {
         "label": "*",
-        "importPath": "utils.auth",
-        "description": "utils.auth",
+        "importPath": "api.utils.auth",
+        "description": "api.utils.auth",
         "isExtraImport": true,
-        "detail": "utils.auth",
+        "detail": "api.utils.auth",
         "documentation": {}
     },
     {
@@ -948,82 +828,34 @@
     },
     {
         "label": "Post",
-        "importPath": "models.models",
-        "description": "models.models",
+        "importPath": "api.models.models",
+        "description": "api.models.models",
         "isExtraImport": true,
-        "detail": "models.models",
+        "detail": "api.models.models",
         "documentation": {}
     },
     {
         "label": "User",
-        "importPath": "models.models",
-        "description": "models.models",
+        "importPath": "api.models.models",
+        "description": "api.models.models",
         "isExtraImport": true,
-        "detail": "models.models",
+        "detail": "api.models.models",
         "documentation": {}
     },
     {
         "label": "*",
-        "importPath": "schemas.post",
-        "description": "schemas.post",
+        "importPath": "api.schemas.post",
+        "description": "api.schemas.post",
         "isExtraImport": true,
-        "detail": "schemas.post",
+        "detail": "api.schemas.post",
         "documentation": {}
     },
     {
         "label": "user",
-        "importPath": "schemas",
-        "description": "schemas",
+        "importPath": "api.schemas",
+        "description": "api.schemas",
         "isExtraImport": true,
-        "detail": "schemas",
-        "documentation": {}
-    },
-    {
-        "label": "UserResponse",
-        "importPath": "schemas.user",
-        "description": "schemas.user",
-        "isExtraImport": true,
-        "detail": "schemas.user",
-        "documentation": {}
-    },
-    {
-        "label": "UserResponse",
-        "importPath": "schemas.user",
-        "description": "schemas.user",
-        "isExtraImport": true,
-        "detail": "schemas.user",
-        "documentation": {}
-    },
-    {
-        "label": "UserInDb",
-        "importPath": "schemas.user",
-        "description": "schemas.user",
-        "isExtraImport": true,
-        "detail": "schemas.user",
-        "documentation": {}
-    },
-    {
-        "label": "UserBase",
-        "importPath": "schemas.user",
-        "description": "schemas.user",
-        "isExtraImport": true,
-        "detail": "schemas.user",
-        "documentation": {}
-    },
-    {
-        "label": "BaseModel",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "EmailStr",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
+        "detail": "api.schemas",
         "documentation": {}
     },
     {
@@ -1112,22 +944,6 @@
         "description": "pydantic.types",
         "isExtraImport": true,
         "detail": "pydantic.types",
-        "documentation": {}
-    },
-    {
-        "label": "conint",
-        "importPath": "pydantic.types",
-        "description": "pydantic.types",
-        "isExtraImport": true,
-        "detail": "pydantic.types",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
         "documentation": {}
     },
     {
@@ -1179,6 +995,30 @@
         "documentation": {}
     },
     {
+        "label": "UserResponse",
+        "importPath": "api.schemas.user",
+        "description": "api.schemas.user",
+        "isExtraImport": true,
+        "detail": "api.schemas.user",
+        "documentation": {}
+    },
+    {
+        "label": "UserInDb",
+        "importPath": "api.schemas.user",
+        "description": "api.schemas.user",
+        "isExtraImport": true,
+        "detail": "api.schemas.user",
+        "documentation": {}
+    },
+    {
+        "label": "UserBase",
+        "importPath": "api.schemas.user",
+        "description": "api.schemas.user",
+        "isExtraImport": true,
+        "detail": "api.schemas.user",
+        "documentation": {}
+    },
+    {
         "label": "OAuth2PasswordBearer",
         "importPath": "fastapi.security",
         "description": "fastapi.security",
@@ -1227,35 +1067,27 @@
         "documentation": {}
     },
     {
-        "label": "shorten_url",
-        "importPath": "routes",
-        "description": "routes",
-        "isExtraImport": true,
-        "detail": "routes",
-        "documentation": {}
-    },
-    {
         "label": "user",
-        "importPath": "routes",
-        "description": "routes",
+        "importPath": "api.routes",
+        "description": "api.routes",
         "isExtraImport": true,
-        "detail": "routes",
+        "detail": "api.routes",
         "documentation": {}
     },
     {
         "label": "login",
-        "importPath": "routes",
-        "description": "routes",
+        "importPath": "api.routes",
+        "description": "api.routes",
         "isExtraImport": true,
-        "detail": "routes",
+        "detail": "api.routes",
         "documentation": {}
     },
     {
         "label": "post",
-        "importPath": "routes",
-        "description": "routes",
+        "importPath": "api.routes",
+        "description": "api.routes",
         "isExtraImport": true,
-        "detail": "routes",
+        "detail": "api.routes",
         "documentation": {}
     },
     {
@@ -1567,7 +1399,7 @@
         "kind": 2,
         "importPath": "api.routes.post",
         "description": "api.routes.post",
-        "peekOfCode": "def get_post(post_id: int, db: Session = Depends(database.get_db)):\n    post = db.query(models.Post).filter(models.Post.id == post_id).first()\n    if post:\n        return post\n    raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=\"Post not found\")\n@router.delete(\"/{post_id}\", response_model=UrlResponse)\ndef delete_post(post_id: int, current_user: UserInDb = Depends(get_current_user), db: Session = Depends(database.get_db)):\n    post = db.query(models.Post).filter(models.Post.id == post_id).first()\n    if post:\n        db.delete(post)",
+        "peekOfCode": "def get_post(post_id: int, db: Session = Depends(database.get_db)):\n    post = db.query(models.Post).filter(models.Post.id == post_id).first()\n    if post:\n        return post\n    raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=\"Post not found\")\n@router.delete(\"/{post_id}\")\ndef delete_post(post_id: int, current_user: UserInDb = Depends(get_current_user), db: Session = Depends(database.get_db)):\n    post = db.query(models.Post).filter(models.Post.id == post_id).first()\n    if post:\n        db.delete(post)",
         "detail": "api.routes.post",
         "documentation": {}
     },
@@ -1576,7 +1408,7 @@
         "kind": 2,
         "importPath": "api.routes.post",
         "description": "api.routes.post",
-        "peekOfCode": "def delete_post(post_id: int, current_user: UserInDb = Depends(get_current_user), db: Session = Depends(database.get_db)):\n    post = db.query(models.Post).filter(models.Post.id == post_id).first()\n    if post:\n        db.delete(post)\n        return {\"url\": f\"/post/{post_id}\"}\n    raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=\"Post not found\")\n@router.put(\"/{post_id}\", response_model=PostResponse)\ndef update_post(post_id: int, post: PostUpdate, current_user: UserInDb = Depends(get_current_user), db: Session = Depends(database.get_db)):\n    post_in_db = db.query(models.Post).filter(models.Post.id == post_id).first()\n    if post_in_db:",
+        "peekOfCode": "def delete_post(post_id: int, current_user: UserInDb = Depends(get_current_user), db: Session = Depends(database.get_db)):\n    post = db.query(models.Post).filter(models.Post.id == post_id).first()\n    if post:\n        db.delete(post)\n        db.commit()\n        return {\"url\": f\"/post/{post_id}\"}\n    raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=\"Post not found\")\n@router.put(\"/{post_id}\", response_model=PostResponse)\ndef update_post(post_id: int, post: PostUpdate, current_user: UserInDb = Depends(get_current_user), db: Session = Depends(database.get_db)):\n    post_in_db = db.query(models.Post).filter(models.Post.id == post_id).first()",
         "detail": "api.routes.post",
         "documentation": {}
     },
@@ -1603,62 +1435,8 @@
         "kind": 5,
         "importPath": "api.routes.post",
         "description": "api.routes.post",
-        "peekOfCode": "router = APIRouter(prefix=\"/post\", tags=[\"Post\"])\n@router.get(\"/\", response_model=List[PostResponse])\ndef get_posts(current_user: UserInDb = Depends(get_current_user), db: Session = Depends(database.get_db)):\n    if current_user.id:\n        return db.query(Post).all()\n    raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail=\"Unauthorized\")\n@router.post(\"/\", response_model=PostResponse, status_code=status.HTTP_201_CREATED)\ndef create_post(post: PostCreate, current_user: UserInDb = Depends(get_current_user), db: Session = Depends(database.get_db)):\n    if current_user.id:\n        create_post = models.Post(content=post.content, author_id=current_user.id,  author=current_user)",
+        "peekOfCode": "router = APIRouter(prefix=\"/post\", tags=[\"Post\"])\n@router.get(\"/\")\ndef get_posts(current_user: UserInDb = Depends(get_current_user), db: Session = Depends(database.get_db)):\n    if current_user.id:\n        return db.query(Post).all()\n    raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail=\"Unauthorized\")\n@router.post(\"/\", response_model=PostResponse, status_code=status.HTTP_201_CREATED)\ndef create_post(post: PostCreate, current_user: UserInDb = Depends(get_current_user), db: Session = Depends(database.get_db)):\n    if current_user.id:\n        create_post = models.Post(content=post.content, author_id=current_user.id,  author=current_user)",
         "detail": "api.routes.post",
-        "documentation": {}
-    },
-    {
-        "label": "generate_array",
-        "kind": 2,
-        "importPath": "api.routes.shorten_url",
-        "description": "api.routes.shorten_url",
-        "peekOfCode": "def generate_array():\n    return [\"1\", \"2\", \"3\", \"4\", \"5\", \"6\", \"7\", \"8\", \"9\", \"0\", \n            \"a\", \"b\", \"c\", \"d\", \"e\", \"f\", \"g\", \"h\", \"i\", \"j\",\n            \"k\", \"l\", \"m\", \"n\", \"o\", \"p\", \"q\", \"r\", \"s\", \"t\",\n            \"u\", \"v\", \"w\", \"x\", \"y\", \"z\",\"A\", \"B\", \"C\", \"D\",\n            \"E\", \"F\", \"G\", \"H\", \"I\", \"J\", \"K\", \"L\", \"M\",\n            \"N\", \"O\", \"P\", \"Q\", \"R\", \"S\", \"T\", \"U\", \"V\", \"W\", \"X\", \"Y\", \"Z\"]\ndef encrypt_url(id: int) -> str:\n    array = generate_array()\n    base = len(array)",
-        "detail": "api.routes.shorten_url",
-        "documentation": {}
-    },
-    {
-        "label": "encrypt_url",
-        "kind": 2,
-        "importPath": "api.routes.shorten_url",
-        "description": "api.routes.shorten_url",
-        "peekOfCode": "def encrypt_url(id: int) -> str:\n    array = generate_array()\n    base = len(array)\n    encrypted_url = \"\"\n    while id > 0:\n        encrypted_url = array[id % base] + encrypted_url\n        id //= base\n    return encrypted_url\n@router.get(\"/shorten_url/\", response_model=UrlResponse)\ndef login(db: Session = Depends(database.get_db), short_url: str = None):",
-        "detail": "api.routes.shorten_url",
-        "documentation": {}
-    },
-    {
-        "label": "login",
-        "kind": 2,
-        "importPath": "api.routes.shorten_url",
-        "description": "api.routes.shorten_url",
-        "peekOfCode": "def login(db: Session = Depends(database.get_db), short_url: str = None):\n    db_url = db.query(models.Urls).filter(models.Urls.short_url == short_url).first()\n    if db_url is None:\n        raise HTTPException(status_code=404, detail=\"Url not found\")\n    return RedirectResponse(url=db_url.long_url, status_code=301)\n@router.get(\"/shorten_url/get_all\")\ndef login(db: Session = Depends(database.get_db)):\n    db_urls = db.query(models.Urls).all()\n    return db_urls\n@router.post(\"/shorten_url/\", response_model=UrlResponse)",
-        "detail": "api.routes.shorten_url",
-        "documentation": {}
-    },
-    {
-        "label": "login",
-        "kind": 2,
-        "importPath": "api.routes.shorten_url",
-        "description": "api.routes.shorten_url",
-        "peekOfCode": "def login(db: Session = Depends(database.get_db)):\n    db_urls = db.query(models.Urls).all()\n    return db_urls\n@router.post(\"/shorten_url/\", response_model=UrlResponse)\ndef login(db: Session = Depends(database.get_db), long_url: str = None):\n    long_url_queried = db.query(models.Urls).filter(models.Urls.long_url == long_url).first()\n    if long_url_queried is not None:\n        return long_url_queried\n    else:\n        db_url = models.Urls(long_url=long_url, short_url='')",
-        "detail": "api.routes.shorten_url",
-        "documentation": {}
-    },
-    {
-        "label": "login",
-        "kind": 2,
-        "importPath": "api.routes.shorten_url",
-        "description": "api.routes.shorten_url",
-        "peekOfCode": "def login(db: Session = Depends(database.get_db), long_url: str = None):\n    long_url_queried = db.query(models.Urls).filter(models.Urls.long_url == long_url).first()\n    if long_url_queried is not None:\n        return long_url_queried\n    else:\n        db_url = models.Urls(long_url=long_url, short_url='')\n        db.add(db_url)  # Add the db_url object to the session\n        db.commit()\n        db.refresh(db_url)\n        long_url_queried = db.query(models.Urls).filter(models.Urls.long_url == long_url)",
-        "detail": "api.routes.shorten_url",
-        "documentation": {}
-    },
-    {
-        "label": "router",
-        "kind": 5,
-        "importPath": "api.routes.shorten_url",
-        "description": "api.routes.shorten_url",
-        "peekOfCode": "router = APIRouter(tags=[\"Shorten Url\"])\ndef generate_array():\n    return [\"1\", \"2\", \"3\", \"4\", \"5\", \"6\", \"7\", \"8\", \"9\", \"0\", \n            \"a\", \"b\", \"c\", \"d\", \"e\", \"f\", \"g\", \"h\", \"i\", \"j\",\n            \"k\", \"l\", \"m\", \"n\", \"o\", \"p\", \"q\", \"r\", \"s\", \"t\",\n            \"u\", \"v\", \"w\", \"x\", \"y\", \"z\",\"A\", \"B\", \"C\", \"D\",\n            \"E\", \"F\", \"G\", \"H\", \"I\", \"J\", \"K\", \"L\", \"M\",\n            \"N\", \"O\", \"P\", \"Q\", \"R\", \"S\", \"T\", \"U\", \"V\", \"W\", \"X\", \"Y\", \"Z\"]\ndef encrypt_url(id: int) -> str:\n    array = generate_array()",
-        "detail": "api.routes.shorten_url",
         "documentation": {}
     },
     {
@@ -1684,7 +1462,7 @@
         "kind": 2,
         "importPath": "api.routes.user",
         "description": "api.routes.user",
-        "peekOfCode": "def get_user_by_id(user_id: int, db: Session = Depends(database.get_db)):\n    user = db.query(models.User).filter(models.User.id == user_id).first()\n    if user:\n        return user\n    raise HTTPException(status_code=404, detail=\"User not found\")\n@router.delete(\"/{user_id}\", response_model=UrlResponse)\ndef delete_user(user_id: int, db: Session = Depends(database.get_db)):\n    user = db.query(models.User).filter(models.User.id == user_id).first()\n    if user:\n        db.delete(user)",
+        "peekOfCode": "def get_user_by_id(user_id: int, db: Session = Depends(database.get_db)):\n    user = db.query(models.User).filter(models.User.id == user_id).first()\n    if user:\n        return user\n    raise HTTPException(status_code=404, detail=\"User not found\")\n@router.delete(\"/{user_id}\")\ndef delete_user(user_id: int, db: Session = Depends(database.get_db)):\n    user = db.query(models.User).filter(models.User.id == user_id).first()\n    if user:\n        db.delete(user)",
         "detail": "api.routes.user",
         "documentation": {}
     },
@@ -1693,7 +1471,7 @@
         "kind": 2,
         "importPath": "api.routes.user",
         "description": "api.routes.user",
-        "peekOfCode": "def delete_user(user_id: int, db: Session = Depends(database.get_db)):\n    user = db.query(models.User).filter(models.User.id == user_id).first()\n    if user:\n        db.delete(user)\n        return {\"url\": f\"/user/{user_id}\"}\n    raise HTTPException(status_code=404, detail=\"User not found\")\n@router.put(\"/{user_id}\", response_model=UserResponse)\ndef update_user(user_id: int, user: user.UserUpdate, db: Session = Depends(database.get_db)):\n    user_in_db = db.query(models.User).filter(models.User.id == user_id).first()\n    if user_in_db:",
+        "peekOfCode": "def delete_user(user_id: int, db: Session = Depends(database.get_db)):\n    user = db.query(models.User).filter(models.User.id == user_id).first()\n    if user:\n        db.delete(user)\n        db.commit()\n        return {\"url\": f\"/user/{user_id}\"}\n    raise HTTPException(status_code=404, detail=\"User not found\")\n@router.put(\"/{user_id}\", response_model=user.UserResponse)\ndef update_user(user_id: int, user: user.UserUpdate, db: Session = Depends(database.get_db)):\n    user_in_db = db.query(models.User).filter(models.User.id == user_id).first()",
         "detail": "api.routes.user",
         "documentation": {}
     },
@@ -1702,7 +1480,7 @@
         "kind": 2,
         "importPath": "api.routes.user",
         "description": "api.routes.user",
-        "peekOfCode": "def update_user(user_id: int, user: user.UserUpdate, db: Session = Depends(database.get_db)):\n    user_in_db = db.query(models.User).filter(models.User.id == user_id).first()\n    if user_in_db:\n        user_in_db.username = user.username\n        user_in_db.email = user.email\n        db.commit()\n        return user_in_db\n    raise HTTPException(status_code=404, detail=\"User not found\")\n@router.put(\"/change_password/{user_id}\", response_model=UserResponse)\ndef change_password(user_id: int, user: user.UserUpdate, db: Session = Depends(database.get_db)):",
+        "peekOfCode": "def update_user(user_id: int, user: user.UserUpdate, db: Session = Depends(database.get_db)):\n    user_in_db = db.query(models.User).filter(models.User.id == user_id).first()\n    if user_in_db:\n        user_in_db.username = user.username\n        user_in_db.email = user.email\n        db.commit()\n        return user_in_db\n    raise HTTPException(status_code=404, detail=\"User not found\")\n@router.put(\"/change_password/{user_id}\", response_model=user.UserResponse)\ndef change_password(user_id: int, user: user.UserUpdate, db: Session = Depends(database.get_db)):",
         "detail": "api.routes.user",
         "documentation": {}
     },
@@ -1785,15 +1563,6 @@
         "description": "api.schemas.token",
         "peekOfCode": "class TokenData(BaseModel):\n    id: int = None",
         "detail": "api.schemas.token",
-        "documentation": {}
-    },
-    {
-        "label": "UrlResponse",
-        "kind": 6,
-        "importPath": "api.schemas.urls",
-        "description": "api.schemas.urls",
-        "peekOfCode": "class UrlResponse(BaseModel):\n    id: int\n    long_url: str\n    short_url: str\n    created_at: datetime",
-        "detail": "api.schemas.urls",
         "documentation": {}
     },
     {
@@ -1954,7 +1723,7 @@
         "kind": 2,
         "importPath": "api.main",
         "description": "api.main",
-        "peekOfCode": "def root():\n    return {\"message\": \"siuuuuuuu!\"}\nif __name__ == \"__main__\":\n    uvicorn.run(app=\"main:app\", host=\"localhost\", port=8000, reload=True)\n#Users API",
+        "peekOfCode": "def root():\n    return RedirectResponse(url=\"/docs\")\nif __name__ == \"__main__\":\n    uvicorn.run(app=\"main:app\", host=\"localhost\", port=8000, reload=True)\n#Users API",
         "detail": "api.main",
         "documentation": {}
     },

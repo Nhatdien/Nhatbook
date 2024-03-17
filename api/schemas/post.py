@@ -2,7 +2,7 @@ from pydantic import BaseModel, EmailStr
 from pydantic.types import conint
 from datetime import datetime
 from typing import Optional
-from schemas.user import UserResponse
+from api.schemas.user import UserResponse
 
 class PostBase(BaseModel):
     author_id: int

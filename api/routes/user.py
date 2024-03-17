@@ -1,18 +1,16 @@
 
-from models import models
-from db import database
+from api.models import models
+from api.db import database
 from fastapi import Response, status, HTTPException, Depends, APIRouter
 import typing
 from sqlalchemy.orm import Session
 from sqlalchemy.exc import IntegrityError
-from schemas.urls import UrlResponse
 from fastapi.encoders import jsonable_encoder
 from fastapi.responses import JSONResponse
 from starlette.responses import RedirectResponse
-from schemas import user
-from utils.auth import *
-from models.models import User
-from schemas.user import UserResponse
+from api.schemas import user
+from api.utils.auth import *
+from api.models.models import User
 
 
 router = APIRouter(prefix="/user", tags=["User"])
@@ -38,22 +36,23 @@ def create_user(user: user.UserCreate, db: Session = Depends(database.get_db)):
         
     return db_user
     
-@router.get("/{user_id}", response_model=UserResponse)
+@router.get("/{user_id}", response_model=user.UserResponse)
 def get_user_by_id(user_id: int, db: Session = Depends(database.get_db)):
     user = db.query(models.User).filter(models.User.id == user_id).first()
     if user:
         return user
     raise HTTPException(status_code=404, detail="User not found")
 
-@router.delete("/{user_id}", response_model=UrlResponse)
+@router.delete("/{user_id}")
 def delete_user(user_id: int, db: Session = Depends(database.get_db)):
     user = db.query(models.User).filter(models.User.id == user_id).first()
     if user:
         db.delete(user)
+        db.commit()
         return {"url": f"/user/{user_id}"}
     raise HTTPException(status_code=404, detail="User not found")
 
-@router.put("/{user_id}", response_model=UserResponse)
+@router.put("/{user_id}", response_model=user.UserResponse)
 def update_user(user_id: int, user: user.UserUpdate, db: Session = Depends(database.get_db)):
     user_in_db = db.query(models.User).filter(models.User.id == user_id).first()
     if user_in_db:
@@ -63,7 +62,7 @@ def update_user(user_id: int, user: user.UserUpdate, db: Session = Depends(datab
         return user_in_db
     raise HTTPException(status_code=404, detail="User not found")
 
-@router.put("/change_password/{user_id}", response_model=UserResponse)
+@router.put("/change_password/{user_id}", response_model=user.UserResponse)
 def change_password(user_id: int, user: user.UserUpdate, db: Session = Depends(database.get_db)):
     user_in_db = db.query(models.User).filter(models.User.id == user_id).first()
     if user_in_db:

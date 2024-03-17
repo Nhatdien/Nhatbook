@@ -9,6 +9,7 @@ from typing import Sequence, Union
 
 from alembic import op
 import sqlalchemy as sa
+from sqlalchemy.ext.mutable import MutableList
 
 
 # revision identifiers, used by Alembic.
@@ -31,7 +32,7 @@ def upgrade() -> None:
                    nullable=True),
 
         #replies
-        sa.Column("replies", sa.ARRAY(sa.Integer), nullable=True),
+        sa.Column("replies", MutableList.as_mutable(sa.ARRAY(sa.Integer)), nullable=True),
         #created and updated at
         sa.Column("created_at", sa.DateTime, server_default=sa.func.now()),
         sa.Column("updated_at", sa.DateTime, server_default=sa.func.now(), server_onupdate=sa.func.now()),
