@@ -62,7 +62,7 @@ def update_user(user_id: int, user: user.UserUpdate, db: Session = Depends(datab
         return user_in_db
     raise HTTPException(status_code=404, detail="User not found")
 
-@router.put("/change_password/{user_id}", response_model=user.UserResponse)
+@router.put("/change_password/{user_id}")
 def change_password(user_id: int, user: user.UserUpdate, db: Session = Depends(database.get_db)):
     user_in_db = db.query(models.User).filter(models.User.id == user_id).first()
     if user_in_db:

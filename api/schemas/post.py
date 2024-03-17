@@ -20,7 +20,6 @@ class PostUpdate(BaseModel):
 class PostResponse(PostBase):
     id: int
     replied_to_id: Optional[int]
-    replies: Optional[list[int]]
     # user: Optional[UserResponse]
 
 class PostInDb(PostResponse):

@@ -24,8 +24,18 @@ class Post(Base):
     created_at = Column(TIMESTAMP, nullable=True, server_default=text("now"))
     updated_at = Column(TIMESTAMP, nullable=True,server_default=text("now"), onupdate=text("now()"))
     replied_to_id = Column(Integer, ForeignKey("post.id", ondelete='CASCADE'))
-    replies = Column(ARRAY(Integer), default=[])
 
     author = relationship("User", back_populates="posts")
 
-    
+class Votes(Base):
+    __tablename__ = "votes"
+
+    id = Column(Integer, primary_key=True, index=True)
+    post_id = Column(Integer, ForeignKey("post.id"))
+    user_id = Column(Integer, ForeignKey("users.id"))
+    vote_type = Column(Boolean)
+    created_at = Column(TIMESTAMP, nullable=True, server_default=text("now()"))
+    updated_at = Column(TIMESTAMP, nullable=True, server_default=text("now()"), onupdate=text("now()"))
+
+    post = relationship("Post", back_populates="votes")
+    user = relationship("User", back_populates="votes")
