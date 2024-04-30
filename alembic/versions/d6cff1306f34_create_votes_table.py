@@ -25,8 +25,8 @@ def upgrade() -> None:
         sa.Column("post_id", sa.Integer, sa.ForeignKey("post.id")),
         sa.Column("user_id", sa.Integer, sa.ForeignKey("users.id")),
         sa.Column("vote_type", sa.String),
-        sa.Column("created_at", sa.DateTime),
-        sa.Column("updated_at", sa.DateTime),
+        sa.Column("created_at", sa.DateTime, server_default=sa.text("now()")),
+        sa.Column("updated_at", sa.DateTime, server_default=sa.text("now()"), onupdate=sa.text("now()"))
     )
 
 

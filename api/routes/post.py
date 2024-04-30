@@ -23,7 +23,7 @@ def get_posts(current_user: UserInDb = Depends(get_current_user), db: Session = 
 def get_post_comments(post_id: int, db: Session = Depends(database.get_db)):
     post = db.query(models.Post).filter(models.Post.replied_to_id == post_id).first()
     if post:
-        return post.comments
+        return post
     raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Post not found")
 
 @router.post("/", response_model=PostResponse, status_code=status.HTTP_201_CREATED)

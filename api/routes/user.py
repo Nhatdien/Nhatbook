@@ -17,7 +17,7 @@ router = APIRouter(prefix="/user", tags=["User"])
 
 
 
-@router.get("/me", response_model=UserBase)
+@router.get("/me", response_model=user.UserResponse)
 def get_user(db: Session = Depends(database.get_db), current_user: models.User = Depends(get_current_user)):
     return current_user
 

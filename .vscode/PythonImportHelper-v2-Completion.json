@@ -97,6 +97,14 @@
         "documentation": {}
     },
     {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Annotated",
         "importPath": "typing",
         "description": "typing",
@@ -427,6 +435,14 @@
         "documentation": {}
     },
     {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
         "label": "declarative_base",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
@@ -448,6 +464,31 @@
         "description": "sqlalchemy.orm",
         "isExtraImport": true,
         "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "api.schemas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "api.schemas",
+        "description": "api.schemas",
+        "detail": "api.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "user",
+        "importPath": "api.schemas",
+        "description": "api.schemas",
+        "isExtraImport": true,
+        "detail": "api.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "vote",
+        "importPath": "api.schemas",
+        "description": "api.schemas",
+        "isExtraImport": true,
+        "detail": "api.schemas",
         "documentation": {}
     },
     {
@@ -491,11 +532,11 @@
         "documentation": {}
     },
     {
-        "label": "database",
-        "importPath": "api.db",
-        "description": "api.db",
+        "label": "models",
+        "importPath": "api.models",
+        "description": "api.models",
         "isExtraImport": true,
-        "detail": "api.db",
+        "detail": "api.models",
         "documentation": {}
     },
     {
@@ -520,6 +561,62 @@
         "description": "api.db",
         "isExtraImport": true,
         "detail": "api.db",
+        "documentation": {}
+    },
+    {
+        "label": "database",
+        "importPath": "api.db",
+        "description": "api.db",
+        "isExtraImport": true,
+        "detail": "api.db",
+        "documentation": {}
+    },
+    {
+        "label": "database",
+        "importPath": "api.db",
+        "description": "api.db",
+        "isExtraImport": true,
+        "detail": "api.db",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
         "documentation": {}
     },
     {
@@ -707,6 +804,22 @@
         "documentation": {}
     },
     {
+        "label": "jsonable_encoder",
+        "importPath": "fastapi.encoders",
+        "description": "fastapi.encoders",
+        "isExtraImport": true,
+        "detail": "fastapi.encoders",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
         "label": "JSONResponse",
         "importPath": "fastapi.responses",
         "description": "fastapi.responses",
@@ -728,6 +841,14 @@
         "description": "fastapi.responses",
         "isExtraImport": true,
         "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "RedirectResponse",
+        "importPath": "starlette.responses",
+        "description": "starlette.responses",
+        "isExtraImport": true,
+        "detail": "starlette.responses",
         "documentation": {}
     },
     {
@@ -808,6 +929,22 @@
         "description": "api.utils.auth",
         "isExtraImport": true,
         "detail": "api.utils.auth",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "api.utils.auth",
+        "description": "api.utils.auth",
+        "isExtraImport": true,
+        "detail": "api.utils.auth",
+        "documentation": {}
+    },
+    {
+        "label": "IntegrityError",
+        "importPath": "sqlalchemy.exc",
+        "description": "sqlalchemy.exc",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.exc",
         "documentation": {}
     },
     {
@@ -867,6 +1004,14 @@
         "documentation": {}
     },
     {
+        "label": "Votes",
+        "importPath": "api.models.models",
+        "description": "api.models.models",
+        "isExtraImport": true,
+        "detail": "api.models.models",
+        "documentation": {}
+    },
+    {
         "label": "*",
         "importPath": "api.schemas.post",
         "description": "api.schemas.post",
@@ -875,11 +1020,19 @@
         "documentation": {}
     },
     {
-        "label": "user",
-        "importPath": "api.schemas",
-        "description": "api.schemas",
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
         "isExtraImport": true,
-        "detail": "api.schemas",
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "EmailStr",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
         "documentation": {}
     },
     {
@@ -968,6 +1121,22 @@
         "description": "pydantic.types",
         "isExtraImport": true,
         "detail": "pydantic.types",
+        "documentation": {}
+    },
+    {
+        "label": "conint",
+        "importPath": "pydantic.types",
+        "description": "pydantic.types",
+        "isExtraImport": true,
+        "detail": "pydantic.types",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
         "documentation": {}
     },
     {
@@ -1108,6 +1277,14 @@
     },
     {
         "label": "post",
+        "importPath": "api.routes",
+        "description": "api.routes",
+        "isExtraImport": true,
+        "detail": "api.routes",
+        "documentation": {}
+    },
+    {
+        "label": "votes",
         "importPath": "api.routes",
         "description": "api.routes",
         "isExtraImport": true,
@@ -1288,7 +1465,7 @@
         "kind": 2,
         "importPath": "alembic.versions.d6cff1306f34_create_votes_table",
         "description": "alembic.versions.d6cff1306f34_create_votes_table",
-        "peekOfCode": "def upgrade() -> None:\n    op.create_table(\n        \"votes\",\n        sa.Column(\"id\", sa.Integer, primary_key=True),\n        sa.Column(\"post_id\", sa.Integer, sa.ForeignKey(\"post.id\")),\n        sa.Column(\"user_id\", sa.Integer, sa.ForeignKey(\"users.id\")),\n        sa.Column(\"vote_type\", sa.String),\n        sa.Column(\"created_at\", sa.DateTime),\n        sa.Column(\"updated_at\", sa.DateTime),\n    )",
+        "peekOfCode": "def upgrade() -> None:\n    op.create_table(\n        \"votes\",\n        sa.Column(\"id\", sa.Integer, primary_key=True),\n        sa.Column(\"post_id\", sa.Integer, sa.ForeignKey(\"post.id\")),\n        sa.Column(\"user_id\", sa.Integer, sa.ForeignKey(\"users.id\")),\n        sa.Column(\"vote_type\", sa.String),\n        sa.Column(\"created_at\", sa.DateTime, server_default=sa.text(\"now()\")),\n        sa.Column(\"updated_at\", sa.DateTime, server_default=sa.text(\"now()\"), onupdate=sa.text(\"now()\"))\n    )",
         "detail": "alembic.versions.d6cff1306f34_create_votes_table",
         "documentation": {}
     },
@@ -1405,7 +1582,7 @@
         "kind": 6,
         "importPath": "api.models.models",
         "description": "api.models.models",
-        "peekOfCode": "class Votes(Base):\n    __tablename__ = \"votes\"\n    id = Column(Integer, primary_key=True, index=True)\n    post_id = Column(Integer, ForeignKey(\"post.id\"))\n    user_id = Column(Integer, ForeignKey(\"users.id\"))\n    vote_type = Column(Boolean)\n    created_at = Column(TIMESTAMP, nullable=True, server_default=text(\"now()\"))\n    updated_at = Column(TIMESTAMP, nullable=True, server_default=text(\"now()\"), onupdate=text(\"now()\"))\n    post = relationship(\"Post\", back_populates=\"votes\")\n    user = relationship(\"User\", back_populates=\"votes\")",
+        "peekOfCode": "class Votes(Base):\n    __tablename__ = \"votes\"\n    id = Column(Integer, primary_key=True, index=True)\n    post_id = Column(Integer, ForeignKey(\"post.id\"))\n    user_id = Column(Integer, ForeignKey(\"users.id\"))\n    vote_type = Column(String, nullable=False)\n    created_at = Column(TIMESTAMP, nullable=True, server_default=text(\"now()\"))\n    updated_at = Column(TIMESTAMP, nullable=True, server_default=text(\"now()\"), onupdate=text(\"now()\"))",
         "detail": "api.models.models",
         "documentation": {}
     },
@@ -1432,7 +1609,7 @@
         "kind": 2,
         "importPath": "api.routes.post",
         "description": "api.routes.post",
-        "peekOfCode": "def get_posts(current_user: UserInDb = Depends(get_current_user), db: Session = Depends(database.get_db)):\n    if current_user.id:\n        return db.query(Post).all()\n    raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail=\"Unauthorized\")\n@router.get(\"/{post_id}/comments\", response_model=List[PostResponse], status_code=status.HTTP_200_OK)\ndef get_post_comments(post_id: int, db: Session = Depends(database.get_db)):\n    post = db.query(models.Post).filter(models.Post.replied_to_id == post_id).first()\n    if post:\n        return post.comments\n    raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=\"Post not found\")",
+        "peekOfCode": "def get_posts(current_user: UserInDb = Depends(get_current_user), db: Session = Depends(database.get_db)):\n    if current_user.id:\n        return db.query(Post).all()\n    raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail=\"Unauthorized\")\n@router.get(\"/{post_id}/comments\", response_model=List[PostResponse], status_code=status.HTTP_200_OK)\ndef get_post_comments(post_id: int, db: Session = Depends(database.get_db)):\n    post = db.query(models.Post).filter(models.Post.replied_to_id == post_id).first()\n    if post:\n        return post\n    raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=\"Post not found\")",
         "detail": "api.routes.post",
         "documentation": {}
     },
@@ -1441,7 +1618,7 @@
         "kind": 2,
         "importPath": "api.routes.post",
         "description": "api.routes.post",
-        "peekOfCode": "def get_post_comments(post_id: int, db: Session = Depends(database.get_db)):\n    post = db.query(models.Post).filter(models.Post.replied_to_id == post_id).first()\n    if post:\n        return post.comments\n    raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=\"Post not found\")\n@router.post(\"/\", response_model=PostResponse, status_code=status.HTTP_201_CREATED)\ndef create_post(post: PostCreate, current_user: UserInDb = Depends(get_current_user), db: Session = Depends(database.get_db)):\n    if current_user.id:\n        create_post = models.Post(content=post.content, author_id=current_user.id,  author=current_user)\n        post.author_id = current_user.id",
+        "peekOfCode": "def get_post_comments(post_id: int, db: Session = Depends(database.get_db)):\n    post = db.query(models.Post).filter(models.Post.replied_to_id == post_id).first()\n    if post:\n        return post\n    raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=\"Post not found\")\n@router.post(\"/\", response_model=PostResponse, status_code=status.HTTP_201_CREATED)\ndef create_post(post: PostCreate, current_user: UserInDb = Depends(get_current_user), db: Session = Depends(database.get_db)):\n    if current_user.id:\n        create_post = models.Post(content=post.content, author_id=current_user.id,  author=current_user)\n        post.author_id = current_user.id",
         "detail": "api.routes.post",
         "documentation": {}
     },
@@ -1558,8 +1735,35 @@
         "kind": 5,
         "importPath": "api.routes.user",
         "description": "api.routes.user",
-        "peekOfCode": "router = APIRouter(prefix=\"/user\", tags=[\"User\"])\n@router.get(\"/me\", response_model=UserBase)\ndef get_user(db: Session = Depends(database.get_db), current_user: models.User = Depends(get_current_user)):\n    return current_user\n@router.post(\"/\", response_model=user.UserResponse, status_code=201)\ndef create_user(user: user.UserCreate, db: Session = Depends(database.get_db)):\n    db_user = models.User(username=user.username, email=user.email, password=hash(user.password))\n    try:\n        db.add(db_user)\n    except IntegrityError:",
+        "peekOfCode": "router = APIRouter(prefix=\"/user\", tags=[\"User\"])\n@router.get(\"/me\", response_model=user.UserResponse)\ndef get_user(db: Session = Depends(database.get_db), current_user: models.User = Depends(get_current_user)):\n    return current_user\n@router.post(\"/\", response_model=user.UserResponse, status_code=201)\ndef create_user(user: user.UserCreate, db: Session = Depends(database.get_db)):\n    db_user = models.User(username=user.username, email=user.email, password=hash(user.password))\n    try:\n        db.add(db_user)\n    except IntegrityError:",
         "detail": "api.routes.user",
+        "documentation": {}
+    },
+    {
+        "label": "create_vote",
+        "kind": 2,
+        "importPath": "api.routes.votes",
+        "description": "api.routes.votes",
+        "peekOfCode": "def create_vote(vote: vote.VoteCreate, db: Session = Depends(database.get_db), current_user: models.User = Depends(get_current_user)):\n    db_vote = models.Votes(vote_type=vote.vote_type, user_id=current_user.id, post_id=vote.post_id)\n    delete_or_create = \"created\"\n    if not current_user:\n        raise HTTPException(status_code=401, detail=\"Unauthorized\")\n    try:\n        existing_vote = db.query(models.Votes).filter(models.Votes.user_id == current_user.id, models.Votes.post_id == vote.post_id).first()\n        # if the user has already voted on the post, delete the vote, else add the vote\n        if existing_vote:\n            if existing_vote.vote_type == vote.vote_type and existing_vote.post_id == vote.post_id and existing_vote.user_id == current_user.id:",
+        "detail": "api.routes.votes",
+        "documentation": {}
+    },
+    {
+        "label": "get_vote_by_post_id",
+        "kind": 2,
+        "importPath": "api.routes.votes",
+        "description": "api.routes.votes",
+        "peekOfCode": "def get_vote_by_post_id(post_id: int, db: Session = Depends(database.get_db)):\n    #a post can have multiple votes, so get all votes for a post\n    votes = db.query(models.Votes).filter(models.Votes.post_id == post_id).all()\n    if votes:\n        return votes\n    raise HTTPException(status_code=404, detail=\"Vote not found\")",
+        "detail": "api.routes.votes",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "api.routes.votes",
+        "description": "api.routes.votes",
+        "peekOfCode": "router = APIRouter(prefix=\"/vote\", tags=[\"Vote\"])\n@router.post(\"/\", response_model=vote.VoteResponse, status_code=201)\ndef create_vote(vote: vote.VoteCreate, db: Session = Depends(database.get_db), current_user: models.User = Depends(get_current_user)):\n    db_vote = models.Votes(vote_type=vote.vote_type, user_id=current_user.id, post_id=vote.post_id)\n    delete_or_create = \"created\"\n    if not current_user:\n        raise HTTPException(status_code=401, detail=\"Unauthorized\")\n    try:\n        existing_vote = db.query(models.Votes).filter(models.Votes.user_id == current_user.id, models.Votes.post_id == vote.post_id).first()\n        # if the user has already voted on the post, delete the vote, else add the vote",
+        "detail": "api.routes.votes",
         "documentation": {}
     },
     {
@@ -1668,6 +1872,51 @@
         "description": "api.schemas.user",
         "peekOfCode": "class UserUpdate(UserBase):\n    password: Optional[str] = None",
         "detail": "api.schemas.user",
+        "documentation": {}
+    },
+    {
+        "label": "VoteBase",
+        "kind": 6,
+        "importPath": "api.schemas.vote",
+        "description": "api.schemas.vote",
+        "peekOfCode": "class VoteBase(BaseModel):\n    vote_type: str\n    user_id: int\n    post_id: int\nclass VoteCreate(VoteBase):\n    pass\nclass VoteResponse(VoteBase):\n    id: int\n    pass\nclass VoteInDb(VoteBase):",
+        "detail": "api.schemas.vote",
+        "documentation": {}
+    },
+    {
+        "label": "VoteCreate",
+        "kind": 6,
+        "importPath": "api.schemas.vote",
+        "description": "api.schemas.vote",
+        "peekOfCode": "class VoteCreate(VoteBase):\n    pass\nclass VoteResponse(VoteBase):\n    id: int\n    pass\nclass VoteInDb(VoteBase):\n    pass\nclass VoteUpdate(VoteBase):\n    pass",
+        "detail": "api.schemas.vote",
+        "documentation": {}
+    },
+    {
+        "label": "VoteResponse",
+        "kind": 6,
+        "importPath": "api.schemas.vote",
+        "description": "api.schemas.vote",
+        "peekOfCode": "class VoteResponse(VoteBase):\n    id: int\n    pass\nclass VoteInDb(VoteBase):\n    pass\nclass VoteUpdate(VoteBase):\n    pass",
+        "detail": "api.schemas.vote",
+        "documentation": {}
+    },
+    {
+        "label": "VoteInDb",
+        "kind": 6,
+        "importPath": "api.schemas.vote",
+        "description": "api.schemas.vote",
+        "peekOfCode": "class VoteInDb(VoteBase):\n    pass\nclass VoteUpdate(VoteBase):\n    pass",
+        "detail": "api.schemas.vote",
+        "documentation": {}
+    },
+    {
+        "label": "VoteUpdate",
+        "kind": 6,
+        "importPath": "api.schemas.vote",
+        "description": "api.schemas.vote",
+        "peekOfCode": "class VoteUpdate(VoteBase):\n    pass",
+        "detail": "api.schemas.vote",
         "documentation": {}
     },
     {
