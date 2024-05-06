@@ -1,7 +1,6 @@
 import os
 import time
 
-import alembic.config
 import pytest
 from sqlalchemy.exc import DataError, IntegrityError
 from sqlalchemy.orm import sessionmaker
