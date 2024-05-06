@@ -5,6 +5,8 @@ from fastapi import Response, status, HTTPException, Depends, APIRouter
 import typing
 from sqlalchemy.orm import Session
 from sqlalchemy.exc import IntegrityError
+from fastapi import BackgroundTasks
+from api.utils.send_mail import send_mail
 from fastapi.encoders import jsonable_encoder
 from fastapi.responses import JSONResponse
 from starlette.responses import RedirectResponse
@@ -23,11 +25,11 @@ def get_user(db: Session = Depends(database.get_db), current_user: models.User =
 
 
 @router.post("/", response_model=user.UserResponse, status_code=201)
-def create_user(user: user.UserCreate, db: Session = Depends(database.get_db)):
+def create_user(user: user.UserCreate, background_tasks: BackgroundTasks, db: Session = Depends(database.get_db)):
     db_user = models.User(username=user.username, email=user.email, password=hash(user.password))
     try:
         db.add(db_user)
-
+        background_tasks.add_task(send_mail, user.email, "Welcome to the forum", "You have successfully registered")
     except IntegrityError:
         raise HTTPException(status_code=400, detail="Username or email already exists")
     finally:
