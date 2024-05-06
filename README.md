@@ -88,3 +88,4 @@ This runs the integration & unit tests. If you want to run them separately, use 
 
 To read about the benefits of using this template,
 check out [our blog post](https://bitestreams.com/blog/fastapi_template/).
+test commit
