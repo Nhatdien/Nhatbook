@@ -27,4 +27,4 @@ jobs:
         - name: check Security
           run: |
             pip install bandit &&
-            poetry run python -m bandit ./api/db/database.py
+            python -m bandit ./api/db/database.py
