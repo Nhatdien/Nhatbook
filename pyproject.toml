@@ -29,6 +29,8 @@ bcrypt = "^4.1.2"
 cloudinary = "^1.39.0"
 pydantic = {extras = ["email"], version = "^2.6.4"}
 schedule = "^1.2.1"
+security = "^1.2.1"
+safety = "^3.2.0"
 
 [tool.poetry.group.dev]
 optional = true
