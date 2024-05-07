@@ -24,3 +24,6 @@ jobs:
         - name: Run tests python version
           run: |
             python --version
+        - name: check Security
+          run: |
+            poetry run bandit ./api/db/database.py
