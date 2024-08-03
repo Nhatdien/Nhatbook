@@ -1,5 +1,5 @@
 from fastapi import FastAPI 
-from api.routes import user, login, post, votes
+from api.routes import user, login, post, votes, ai_chat
 import uvicorn
 from fastapi.middleware.cors import CORSMiddleware
 from starlette.responses import RedirectResponse
@@ -23,6 +23,7 @@ app.include_router(user.router)
 app.include_router(login.router)
 app.include_router(post.router)
 app.include_router(votes.router)
+app.include_router(ai_chat.router)
 
 
 #Posts API

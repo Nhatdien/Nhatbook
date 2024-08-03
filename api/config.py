@@ -1,6 +1,7 @@
 from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
+    ollama_url: str
     database_hostname: str
     database_port: str
     database_password: str
